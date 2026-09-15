@@ -8,6 +8,8 @@ import authRouter from "./routes/auth.route.js"
 import userRouter from "./routes/user.route.js"
 import interviewRouter from "./routes/interview.route.js"
 import paymentRouter from "./routes/payment.route.js"
+const app = express()
+
 const allowedOrigins = [
     process.env.CLIENT_URL,
     "http://localhost:5173",
