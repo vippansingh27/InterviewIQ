@@ -11,7 +11,7 @@ import InterviewPage from "./pages/InterviewPage";
 import Pricing from './pages/Pricing';
 import InterviewReport from './pages/InterviewReport';
 import InterviewHistory from './pages/InterviewHistory';
-export const ServerUrl = "http://localhost:8000"
+export const ServerUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:8000"
 
 function App() {
     const dispatch = useDispatch()
